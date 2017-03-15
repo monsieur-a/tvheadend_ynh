@@ -42,7 +42,7 @@ sudo yunohost firewall allow TCP 9982 > /dev/null 2>&1
 
 # Add Tvheadend repository
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-echo "deb https://dl.bintray.com/tvheadend/deb $DEB_VERSION unstable" | sudo tee /etc/apt/sources.list.d/tvheadend.list
+echo "deb https://dl.bintray.com/tvheadend/deb $DEB_VERSION stable" | sudo tee /etc/apt/sources.list.d/tvheadend.list
 sudo apt-get install apt-transport-https
 sudo apt-get update
 export DEBIAN_FRONTEND=noninteractive
